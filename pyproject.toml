@@ -13,7 +13,7 @@ tesseract = ["pytesseract>=0.3.13"]
 docling = ["docling>=2.70,<3"]
 paddle = ["paddleocr>=3.0,<4"] # Install the platform-specific PaddlePaddle runtime separately.
 gemini = ["google-genai>=1.65,<2"]
-mistral = ["mistralai>=1.0,<3"]
+mistral = ["mistralai>=2"]
 dots-ocr = ["openai>=1.0,<3"]
 datasets = ["datasets>=4,<5"]
 notebooks = ["jupyter>=1", "pandas>=2", "matplotlib>=3.7", "seaborn>=0.12"]

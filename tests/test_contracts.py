@@ -305,8 +305,8 @@ def test_paddle_predict_retains_native_blocks(monkeypatch):
 
 
 def test_mistral_preserves_incomplete_spend(monkeypatch):
-    mistralai = pytest.importorskip("mistralai")
-    from mistralai.models import OCRResponse
+    mistralai = pytest.importorskip("mistralai.client")
+    from mistralai.client.models import OCRResponse
 
     response = OCRResponse(
         model="mistral-ocr-4-1", pages=[], usage_info={"pages_processed": 1}
