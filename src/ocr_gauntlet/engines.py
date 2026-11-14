@@ -452,7 +452,7 @@ def run_gemini(
 def run_mistral_ocr(
     image: Image.Image, api_key: str | None = None, model: str = MISTRAL_MODEL
 ) -> tuple[str, dict]:
-    from mistralai import Mistral
+    from mistralai.client import Mistral
 
     key = api_key or os.environ.get("MISTRAL_API_KEY")
     if not key:
